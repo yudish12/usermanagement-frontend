@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap");
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.form {
+  font-family: "Lato";
+  display: flex;
+  padding: 1rem;
+  font-weight: "300";
+  flex-direction: column;
+  width: 350px;
+  margin-top: 6rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.1),
+    0 2px 4px 2px rgba(0, 0, 0, 0.06);
+  border-top: 5px solid #3b82f6;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-label {
+  display: block;
+  font-size: var(--smallText);
+  letter-spacing: 1px;
+  letter-spacing: var(--letterSpacing);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.form-input {
+  background: #f0f4f8;
+  background: var(--backgroundColor);
+  border: 1px solid #bcccdc;
+  height: 25px;
+  border-radius: 0.25rem;
+  border-radius: var(--borderRadius);
+  padding: 0.375rem 0.75rem;
+  width: 90%;
+}
+.logo {
+  font-family: "Roboto Slab", serif;
+}
+.image-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 0.8rem 10rem;
+}
+.btn {
+  background: #3b82f6;
+  border: transparent;
+  border-radius: 0.25rem;
+
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+
+  padding: 0.375rem 0.75rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+.btn-hipster {
+  background: #bfdbfe;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+  border: transparent;
+  color: #3b82f6;
+  padding: 0.35rem 1rem;
+  cursor: pointer;
+}
+.btn-hipster:hover,
+.btn:hover {
+  background-color: #1e40af;
+  color: white;
+}
+.dp {
+  border-radius: 100%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+}
+
+.card h3 {
+  color: #3b82f6;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 39px;
+  background: #e8f0f4;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  width: 70%;
+  align-items: center;
+}
+
+.card h4 {
+  text-transform: capitalize;
+  color: #1049a5;
+  font-size: 20px;
+}
+
+.card p {
+  color: #1049a5;
+  font-size: 15px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-btn {
+  background-color: #f8d7da;
+  color: #842029;
+  cursor: pointer;
+  border-radius: 6px;
+  border: transparent;
+  padding: 0.375rem 0.75rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+.delete-btn:hover {
+  color: white;
+  background-color: #842029;
+}
+
+.image-input {
+  display: flex;
+  margin: 0.5rem;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    padding: 0.8rem 1rem;
+  }
+  .logo span {
+    font-size: 1.5rem !important;
+  }
+  .links {
+    gap: 1rem;
+  }
+  .links h3 {
+    font-size: 0.75rem;
+  }
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .form {
+    width: 260px;
+  }
+  .form-label {
+    font-size: 0.75rem;
+  }
+  .btn-hipster {
+    font-size: 0.75rem;
+  }
+  .img {
+    height: 65px;
+    width: 65px;
+  }
+  .form-input {
+    height: 15px;
+  }
+  .card-container {
+    place-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 1rem;
+  }
+  .card {
+    min-width: 250px;
+  }
+}
